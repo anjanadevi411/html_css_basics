@@ -1,0 +1,220 @@
+.clr {
+  clear: both;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  width: 100%;
+  background-color: #333;
+  color: white;
+}
+.navbar-logo {
+  float: left;
+  text-decoration: none;
+  font-size: 19px;
+  padding: 10px 20px;
+  color: white;
+}
+.navbar-nav {
+  margin: 0%;
+  float: right;
+}
+
+.navbar .navbar-nav .navbar-item {
+  display: inline;
+  list-style: none;
+}
+
+.navbar-nav .navbar-item a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0.9em 0.7em;
+  color: white;
+}
+
+.toggle-collapse {
+  float: right;
+  width: 45px;
+  height: 32px;
+  margin: 0.4em 0.7em;
+  display: none;
+}
+
+.navbar {
+  font-family: "Montserrat", sans-serif;
+}
+
+.back-image {
+  background-image: url("creative.jpg");
+  padding: 18px;
+  background-position: center top;
+  text-align: center;
+  min-height: 300px;
+  font-family: "Montserrat", sans-serif;
+  /*height: 100vh;*/
+}
+
+.backimage-ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  height: 45vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.backimage-li {
+  padding: 15px;
+}
+
+.backimage-li a {
+  border: 2px solid white;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  margin: 10px;
+  padding: 10px;
+  width: 122px;
+  height: 122px;
+}
+
+.backimage-li a:hover {
+  background-color: white;
+  color: black;
+  border: white;
+}
+
+.back-image h1 {
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.back-image p {
+  text-align: center;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-container div {
+  border: 1px #000 solid;
+  padding: 10px;
+}
+.block {
+  flex-basis: content;
+  border: 3px solid #000;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 15px;
+  height: 400px;
+  width: 300px;
+}
+
+.flex-container .block a {
+  color: #000;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  border: 3px solid #000;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex-container .block a:hover {
+  background-color: black;
+  color: white;
+  border: white;
+}
+
+.flex-container .block p {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+}
+
+.flex-container .block h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+#footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+#footer .footer-flex {
+  padding: 0;
+  list-style: none;
+  margin: auto;
+}
+
+#footer .footer-list {
+  display: inline;
+  float: left;
+  padding-right: 15px;
+}
+
+.fa-instagram {
+  color: pink;
+}
+
+#footer .footer-cp {
+  float: right;
+}
+
+@media (max-width: 765px) {
+  .navbar-logo {
+    display: inline-block;
+    float: none;
+  }
+  .toggle-collapse {
+    display: inline-block;
+  }
+  .navbar-nav {
+    color: white;
+    padding: 0%;
+    display: none;
+  }
+  .navbar .navbar-item .navbar-nav {
+    display: block;
+    list-style: none;
+  }
+  .navbar-collapse {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    height: 0vh;
+    transition: all 499ms ease;
+  }
+  .flex-container {
+    display: inline-block;
+    justify-content: none;
+  }
+  #footer .footer-list {
+    display: inline-block;
+    float: none;
+    padding-bottom: 15px;
+  }
+  #footer .footer-cp {
+    float: none;
+  }
+  .back-image .backimage-ul {
+    display: inline-block;
+  }
+}
